@@ -10,4 +10,8 @@
 
 ## Benchmark results
 
-## Double check by going from seed-phrase to seed and back (rounway conversion) to avoid any loss of funds.
+## Testing
+* Double check by going from seed-phrase to seed and back (rounway conversion) to avoid any loss of funds.
+* Compare performance and add reference to Rust vainity address generator from Makis
+* https://github.com/MakisChristou/grin-vanity
+* Just a feeling but I think I can make a faster implementation...we will see.
