@@ -14,4 +14,6 @@
 * Double check by going from seed-phrase to seed and back (rounway conversion) to avoid any loss of funds.
 * Compare performance and add reference to Rust vainity address generator from Makis
 * https://github.com/MakisChristou/grin-vanity
-* Just a feeling but I think I can make a faster implementation...we will see.
+* Seed part is fast, 6.6 million valid seeds per secod
+* Bottleneck appears to be curve25519 Public Key generation (8/second)
+  * Check out https://github.com/dalek-cryptography/curve25519-dalek for optional outsourcing that part
